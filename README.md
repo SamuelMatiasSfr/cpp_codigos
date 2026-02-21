@@ -1,19 +1,17 @@
-# Códigos em C++
+# Códigos em Java
 
-Bem-vindo ao repositório de códigos em C++! Estes projetos foram desenvolvidos como atividades práticas da matéria Linguagem e Técnicas de Programação 1 no curso técnico de informática do CEFET-MG.
+Estes projetos foram desenvolvidos como atividades práticas da matéria Linguagem e Técnicas de Programação 2 no curso técnico de informática do CEFET-MG.
 
-## ✔ Requisitos:
-- Compilador C: Um compilador compatível com C++11 ou superior
-- Eclipse IDE (ou outro IDE de sua preferência)
+## Requisitos:
+- Compilador C compatível com C++11 ou superior
 
-## ⚙️ Configuração
+## Tecnologias:
+- C/C++
+- SFML
+- Eclipse IDE
 
-Siga as etapas abaixo:
+## Como executar
+1. Baixe e extraia o arquivo zip com os projetos
+2. Abra o projeto desejado na IDE de sua preferência
+3. Execute a classe do projeto que possui a função `main` 
 
-1. Clone ou Baixe o Repositório
-    - Baixe e extraia o arquivo zip, copie o projeto desejado para sua pasta workspace
-      
-2. Configuração do Projeto
-    - Abra seu pasta workspace no Eclipse ou na sua IDE preferido e importe o projeto
-
-3. Execute o projeto
