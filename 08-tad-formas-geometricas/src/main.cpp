@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Implementar um TAD Cubo e Cilindro em C++
-//============================================================================
-
 #include <cstdio>
 #include <iostream>
 #include <clocale>
@@ -20,13 +12,13 @@ int main() {
 	Cubo cubo(2.0);
 	Cilindro cilindro(2.0, 2.0);
 
-	cout << "O lado do cubo é: " <<	cubo.getXYZ() << endl;
-	cout << "A área do cubo é: " << cubo.calcularArea() << endl;
-	cout << "A área do cubo é: " << cubo.calcularVolume() << endl;
-	cout << "O raio do cilindro é: " <<	cilindro.getRaio() << endl;
-	cout << "O altura do cilindro é: " <<	cilindro.getAltura() << endl;
-	cout << "A área do cilindro é: " << cilindro.calcularArea() << endl;
-	cout << "A área do cilindro é: " << cilindro.calcularVolume() << endl;
+	cout << "O lado do cubo ï¿½: " <<	cubo.getXYZ() << endl;
+	cout << "A ï¿½rea do cubo ï¿½: " << cubo.calcularArea() << endl;
+	cout << "A ï¿½rea do cubo ï¿½: " << cubo.calcularVolume() << endl;
+	cout << "O raio do cilindro ï¿½: " <<	cilindro.getRaio() << endl;
+	cout << "O altura do cilindro ï¿½: " <<	cilindro.getAltura() << endl;
+	cout << "A ï¿½rea do cilindro ï¿½: " << cilindro.calcularArea() << endl;
+	cout << "A ï¿½rea do cilindro ï¿½: " << cilindro.calcularVolume() << endl;
 
 	return 0;
 }

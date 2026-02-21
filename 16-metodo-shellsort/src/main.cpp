@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : samuel_matias_shellsort.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description :
-//============================================================================
-
 #include <climits>
 #include <cstdio>
 #include <cstdlib>
@@ -20,7 +12,7 @@ double gerarRand(int tam){
 	return resultado;
 }
 
-//FUNÇÕES PARA INTEIROS
+//FUNï¿½ï¿½ES PARA INTEIROS
 void shellsort(int vetor[], int tam){
 	int i, j, h = 1, x, quantTrocas=0;
 
@@ -73,7 +65,7 @@ void imprime(int vetor[], int tam){
 	cout << endl;
 }
 
-//FUNÇÕES PARA STRINGS
+//FUNï¿½ï¿½ES PARA STRINGS
 void shellsortString(string &palavra, int tam){
 	int j, h=1, quantTrocas=0;
 

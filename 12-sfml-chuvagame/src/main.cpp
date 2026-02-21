@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : LP1-16-SFML-Atividade de laboratório
-//============================================================================
-
 #include <SFML/Graphics.hpp>
 #include <SFML/audio.hpp>
 #include <cstdlib>
@@ -65,10 +57,10 @@ int main() {
 
 	sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!",
 			sf::Style::Close | sf::Style::Titlebar);
-	// Opções de abertura da janela: sf::Style::Close + sf::Style::Titlebar + sf::Style::Resize
+	// Opï¿½ï¿½es de abertura da janela: sf::Style::Close + sf::Style::Titlebar + sf::Style::Resize
 
 
-	//Declara variávieis para SFML
+	//Declara variï¿½vieis para SFML
 	sf::Texture texturaBola;
 	sf::Sprite bolaImage;
 
@@ -101,7 +93,7 @@ int main() {
 	sf::Font font;
 
 
-	//Declara variávieis para o jogo
+	//Declara variï¿½vieis para o jogo
 	int pontos = 0;
 	int vidas = 5;
 
@@ -120,10 +112,10 @@ int main() {
 	window.setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
 
 	window.setFramerateLimit(60); // Limita os frames
-	window.setVerticalSyncEnabled(true);//limita a sincronização
+	window.setVerticalSyncEnabled(true);//limita a sincronizaï¿½ï¿½o
 
 
-	//Inicializa as variávies.
+	//Inicializa as variï¿½vies.
 	textureFundo.loadFromFile("assets/fundo.png");
 	textureDropImage.loadFromFile("assets/droplet.png");
 	texturebucketImage.loadFromFile("assets/bucket.png");
@@ -170,7 +162,7 @@ int main() {
 	txtVidas.setPosition(600, 10);
 	txtPontos.setPosition(600, 40);
 
-	// a função cria a gota de chuva como um sprite.
+	// a funï¿½ï¿½o cria a gota de chuva como um sprite.
 	dropImage = spawnRaindrop(textureDropImage);
 	bolaImage = spawnBola(texturaBola);
 
@@ -180,7 +172,7 @@ int main() {
 		velBucketX = 0;
 		velBucketY = 0;
 
-		//Trata as interações.
+		//Trata as interaï¿½ï¿½es.
 		while (window.pollEvent(event)) {
 			if (event.type == sf::Event::Closed)
 				window.close();
@@ -215,7 +207,7 @@ int main() {
 
 		/**********************Atualiza o mundo**********************/
 
-		if (!pausado) { //Pausa a atualização do mundo (barra de espaço)
+		if (!pausado) { //Pausa a atualizaï¿½ï¿½o do mundo (barra de espaï¿½o)
 
 			//Move objetos.
 
@@ -248,7 +240,7 @@ int main() {
 				txtVidas.setString(str);
 			}
 
-			/**********************Testa colisões **********************/
+			/**********************Testa colisï¿½es **********************/
 			if (bucketImage.getGlobalBounds().intersects(
 					dropImage.getGlobalBounds())) {
 				pontos++;
@@ -267,9 +259,9 @@ int main() {
 
 			//Verifica o fim do jogo.
 			if (vidas == 0) {
-				overSound.play(); //Se a condição não mudar (vidas==0) isso é
+				overSound.play(); //Se a condiï¿½ï¿½o nï¿½o mudar (vidas==0) isso ï¿½
 								  //chamado 60 vezes por segundo.
-								  //Se não puder mudar a condição use um clock
+								  //Se nï¿½o puder mudar a condiï¿½ï¿½o use um clock
 								  //dar um tempo entre uma chamada e outra.
 				rainMusic.pause();
 				velDrop = 0;
@@ -294,7 +286,7 @@ int main() {
 		window.draw(nuvemImage);    //desenha nuvem
 		window.draw(bolaImage);
 		window.draw(dropImage);		// Desenha gota de chuva
-		window.draw(txtPontos);		// Desenha potuação
+		window.draw(txtPontos);		// Desenha potuaï¿½ï¿½o
 		window.draw(txtVidas);		// Desenha vidas
 		window.draw(txtGameOver);	// Desenha gameOver
 		window.display();		 	// Mostra na tela.

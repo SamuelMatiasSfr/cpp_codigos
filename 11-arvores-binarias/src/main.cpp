@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Enunciado.txt
-//============================================================================
-
 #include <iostream>
 #include "Arvore.hpp"
 

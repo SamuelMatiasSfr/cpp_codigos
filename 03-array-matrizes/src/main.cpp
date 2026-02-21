@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Prova Mensal Prática-LP1-1ºBim.pdf
-//============================================================================
-
 #include <iostream>
 #include <stdio.h>
 #include <locale.h>
@@ -145,7 +137,7 @@ void maior_menor(int array[], int t){
 
 void atividade3(){
 	int tam;
-	printf("Digite o tamanho da função: ");
+	printf("Digite o tamanho da funï¿½ï¿½o: ");
 	scanf("%d", &tam);
 
 	int vetor[tam];

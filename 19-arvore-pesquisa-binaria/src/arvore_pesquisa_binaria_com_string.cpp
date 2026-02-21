@@ -1,25 +1,23 @@
-//============================================================================
-// Name        : LP1-24-ArvorePesquisaBinariaInteiro.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description :
 /*
- * 1. O usuário insere um vetor de no máximo 5 números
- * 2. O usuário digita um número que será pesquisado
- * 3. A pesquisa é realizada e retorna se o registro existe ou não na árvore binária
- */
-//============================================================================
+
+Descrição da tarefa:
+
+1. O usu�rio insere uma string
+2. O usu�rio digita um caractere que ser� pesquisado
+3. A pesquisa � realizada e retorna se o registro existe ou n�o na �rvore bin�ria
+ 
+*/
 
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
 #include <sys/time.h>
+#include <string.h>
 
-#define MAX 5
+#define MAX 50
 
-typedef long TipoChave;
+typedef char TipoChave;
 
 typedef struct TipoRegistro {
     TipoChave Chave;
@@ -117,7 +115,7 @@ void Retira(TipoRegistro x, TipoApontador *p) {
 void Central(TipoApontador p) {
     if (p == NULL) return;
     Central(p->Esq);
-    printf("%ld\n", p->Reg.Chave);
+    printf("%c\n", p->Reg.Chave);
     Central(p->Dir);
 }
 
@@ -125,13 +123,13 @@ void TestaI(TipoNo *p, int pai) {
     if (p == NULL) return;
     if (p->Esq != NULL) {
         if (p->Reg.Chave < p->Esq->Reg.Chave) {
-            printf("Erro: Pai %ld menor que filho a esquerda %ld\n", p->Reg.Chave, p->Esq->Reg.Chave);
+            printf("Erro: Pai %c menor que filho a esquerda %c\n", p->Reg.Chave, p->Esq->Reg.Chave);
             exit(1);
         }
     }
     if (p->Dir != NULL) {
         if (p->Reg.Chave > p->Dir->Reg.Chave) {
-            printf("Erro: Pai %ld maior que filho a direita %ld\n", p->Reg.Chave, p->Dir->Reg.Chave);
+            printf("Erro: Pai %c maior que filho a direita %c\n", p->Reg.Chave, p->Dir->Reg.Chave);
             exit(1);
         }
     }
@@ -166,26 +164,28 @@ int main(int argc, char *argv[]) {
     struct timeval t;
     TipoNo *Dicionario;
     TipoRegistro x;
+    int i, k, tam;
     TipoChave vetor[MAX];
-    int i, k, n, pesquisado;
+    char n, pesquisado;
 
     Inicializa(&Dicionario);
 
-    // Usuário entra com o vetor e uma permutação aleatória de chaves entre 1 e MAX é gerada
-    for (i = 0; i < MAX; i++){
-    	std::cout << "Digite um elemento: ";
-    	std::cin >> vetor[i];
-    }
+    // Usu�rio entra com a string e uma permuta��o aleat�ria de chaves
+    std::cout << "Digite uma string: ";
+    std::cin >> vetor;
+
+    tam = strlen(vetor);
+
     std::cout << std::endl;
     gettimeofday(&t, NULL);
     srand((unsigned int)t.tv_usec);
-    Permut(vetor, MAX - 1);
+    Permut(vetor, tam - 1);
 
-    // Insere cada chave na árvore e testa sua integridade após cada inserção
-    for (i = 0; i < MAX; i++) {
+    // Insere cada chave na �rvore e testa sua integridade ap�s cada inser��o
+    for (i = 0; i < tam; i++) {
         x.Chave = vetor[i];
         Insere(x, &Dicionario);
-        printf("Inseriu chave: %ld\n", x.Chave);
+        printf("Inseriu chave: %c\n", x.Chave);
         Testa(Dicionario);
     }
     std::cout << std::endl;
@@ -194,23 +194,23 @@ int main(int argc, char *argv[]) {
     std::cin >> pesquisado;
     std::cout << std::endl;
 
-    // Retira uma chave aleatoriamente e realiza a pesquisa necessária
-    for (i = 0; i <= MAX; i++) {
+    // Retira uma chave aleatoriamente e realiza a pesquisa necess�ria
+    for (i = 0; i <= tam; i++) {
         k = (int)(5.0 * rand() / (RAND_MAX + 1.0));
         n = vetor[k];
         x.Chave = n;
         Retira(x, &Dicionario);
         Testa(Dicionario);
-        printf("Retirou chave: %ld\n", x.Chave);
+        printf("Retirou chave: %c\n", x.Chave);
 
         x.Chave = pesquisado;
 		if (x.Chave != n) {
-			printf("Pesquisando chave: %ld\n", x.Chave);
+			printf("Pesquisando chave: %c\n", x.Chave);
 			Pesquisa(&x, &Dicionario);
 
 			x.Chave = n;
 			Insere(x, &Dicionario);
-			printf("Inseriu chave: %ld\n", x.Chave);
+			printf("Inseriu chave: %c\n", x.Chave);
 			Testa(Dicionario);
 
 			break;

@@ -1,16 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description :
-/*
-1) Etapa 1: Implementação e Demonstração de como funciona uma Pilha em C++
-
-2) Etapa 2: Enunciado.txt
-*/
-//============================================================================
-
 #include <iostream>
 
 #include "Stack.hpp"

@@ -1,20 +1,19 @@
-//============================================================================
-// Name        : heapsort.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description :
 /*
- * 1) Testar o código de 1 a 20 mostrando passo a passo do vetor
- * 2) Fazer a mesma coisa que a 1 mas com um vetor inserido pelo usuário
- * 3) Fazer a mesma coisa que a 1 e a 2, mas com uma string
- */
-//============================================================================
+
+DescriÃ§Ã£o da tarefa:
+
+1) Testar o cï¿½digo de 1 a 20 mostrando passo a passo do vetor
+
+2) Fazer a mesma coisa que a 1 mas com um vetor inserido pelo usuï¿½rio
+
+3) Fazer a mesma coisa que a 1 e a 2, mas com uma string
+
+*/
 
 #include <iostream>
 using namespace std;
 
-//FUNÇÕES PARA INTEIRO
+//FUNï¿½ï¿½ES PARA INTEIRO
 void imprime(int vetor[], int tam){
 	for(int i=0; i<tam; i++){
 		cout << vetor[i] << " ";
@@ -136,7 +135,7 @@ void atividade2(){
 }
 
 
-//FUNÇÕES PARA CHAR
+//FUNï¿½ï¿½ES PARA CHAR
 void imprimeChar(char *vetor, int tam){
 	for(int i=0; i<tam; i++){
 		cout << vetor[i] << " ";

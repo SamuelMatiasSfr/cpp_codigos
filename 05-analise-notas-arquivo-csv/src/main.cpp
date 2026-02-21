@@ -1,17 +1,14 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description :
 /*
-1 ) Carregue os dados do arquivo csv no programa (Solicite ao usuário qual arquivo ele quer carregar).
+
+DescriÃ§Ã£o da tarefa:
+
+1 ) Carregue os dados do arquivo csv no programa (Solicite ao usuï¿½rio qual arquivo ele quer carregar).
 
 2) Calcule e apresente a media das notas para cada subturma.
 
-3) O programa deve funcionar para qualquer um dos arquivos (eles tem o mesmo formato, mas o tamanho é diverso).
+3) O programa deve funcionar para qualquer um dos arquivos (eles tem o mesmo formato, mas o tamanho ï¿½ diverso).
+
 */
-//============================================================================
 
 #include <iostream>
 #include <fstream>
@@ -51,7 +48,7 @@ void Exibir(vector<int>& sub, vector<float>& nt, int position){
 	float media = soma/cont;
 	if(cont > 0){
 		cout << endl;
-		printf("A média da subturma %d é igual a %.2f\n", position, media);
+		printf("A mï¿½dia da subturma %d ï¿½ igual a %.2f\n", position, media);
 	}
 }
 

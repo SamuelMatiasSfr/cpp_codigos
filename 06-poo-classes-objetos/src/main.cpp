@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : LP1-11-Classes e objetos-Atividade de laboratório.pdf
-//============================================================================
-
 #include <iostream>
 #include <clocale>
 #include <fstream>
@@ -24,14 +16,14 @@ class Pessoa{
 		void imprime(){
 			cout << "Nome: " << nome << endl;
 			cout << "Idade: " << idade << endl;
-			cout << "Matrícula: " << numeroMatricula << endl;
+			cout << "Matrï¿½cula: " << numeroMatricula << endl;
 			cout << "Peso: " << peso << endl;
 			cout << endl;
 		};
 };
 
 void Atividade1(){
-	cout << "Atividade de laboratório" << endl;
+	cout << "Atividade de laboratï¿½rio" << endl;
 
 	Pessoa alisson;
 	alisson.nome = "Alison";

@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : LP1-PMP2-2
-//============================================================================
-
 #include <iostream>
 #include <string>
 #include <sstream>

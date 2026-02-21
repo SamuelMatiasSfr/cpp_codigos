@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : samuel_matias_quicksort.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <climits>
 #include <cstdio>
 #include <cstdlib>
@@ -21,7 +13,7 @@ double gerarRand(){
 	return resultado;
 }
 
-//FUNÇÕES PARA INTEIROS
+//FUNï¿½ï¿½ES PARA INTEIROS
 void imprime(int vetor[], int tam){
 	for(int i=0; i<tam; i++){
 		cout << vetor[i] << " ";
@@ -33,7 +25,7 @@ void particao(int esq, int dir, int *i, int *j, int vetor[]){
 	int x, w;
 	*i = esq;  *j = dir;
 	x = vetor[(*i + *j) / 2]; //obtem o pivo x
-	cout << "\nO pivô é: " << x << endl;
+	cout << "\nO pivï¿½ ï¿½: " << x << endl;
 
 	do{
 		while (x > vetor[*i]){
@@ -87,7 +79,7 @@ void atividade1(){
 
 
 
-//FUNÇÕES PARA STRINGS
+//FUNï¿½ï¿½ES PARA STRINGS
 void imprimeString(string &palavra, int tam){
 	cout << palavra << endl;
 }
@@ -97,7 +89,7 @@ void particaoString(int esq, int dir, int *i, int *j, string &vetor){
 	char x, w;
 	*i = esq;  *j = dir;
 	x = vetor[(*i + *j) / 2]; //obtem o pivo x
-	cout << "\nO pivô é: " << x << endl;
+	cout << "\nO pivï¿½ ï¿½: " << x << endl;
 
 	do{
 		while (x > vetor[*i]){

@@ -1,19 +1,14 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description :
 /*
 
-1 - Aloque dinamicamente um vetor de 5 posições de inteiros e insira como valores seus índices.
+DescriÃ§Ã£o da tarefa:
 
-2 - Aloque dinamicamente uma matriz 4 x 4 usando ponteiros e insira em cada posição a soma de seus índices.
+1 - Aloque dinamicamente um vetor de 5 posiï¿½ï¿½es de inteiros e insira como valores seus ï¿½ndices.
+
+2 - Aloque dinamicamente uma matriz 4 x 4 usando ponteiros e insira em cada posiï¿½ï¿½o a soma de seus ï¿½ndices.
 
 3 - Crie um array dinamicamente alocado de objetos Bola com 10 objetos e insira-os na tela para o arquivo fornecido (Projeto SFML).
 
- */
-//============================================================================
+*/
 
 #include <iostream>
 #include "Bolas.hpp"
@@ -91,7 +86,7 @@ int main() {
 		float t = 0.5;
 
 		//Define a janela de desenho.
-		sf::RenderWindow window(sf::VideoMode(800, 600), "Programação é Legal !!!");
+		sf::RenderWindow window(sf::VideoMode(800, 600), "Programaï¿½ï¿½o ï¿½ Legal !!!");
 		window.setFramerateLimit(60); // Limita o frame hate.
 
 		//Bem mais Facil criar uma bolinha

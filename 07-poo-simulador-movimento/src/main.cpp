@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Prova Mensal Prática-LP1-2ºBim-T1.pdf
-//============================================================================
-
 #include <iostream>
 #include <string>
 #include <sstream>

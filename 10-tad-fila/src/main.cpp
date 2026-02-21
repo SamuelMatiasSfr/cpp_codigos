@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Implementação e Demonstração de Filas em C++
-//============================================================================
-
 #include <iostream>
 #include "Fila.hpp"
 

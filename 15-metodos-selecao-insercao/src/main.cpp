@@ -1,20 +1,17 @@
-//============================================================================
-// Name        : samuel_matias_selecao.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description :
 /*
- * 1) Implementar ordenação por seleção e inserção
- * 	a) Verificar cada algoritmo
- * 	b) Modificar a entrada e verificar o tempo de compilamento (entrada: 1000)
- *	c) Verficar o exemplo do livro: ordena -> adenor
- */
-//============================================================================
+
+DescriÃ§Ã£o da tarefa:
+
+1) Implementar ordenaï¿½ï¿½o por seleï¿½ï¿½o e inserï¿½ï¿½o
+a) Verificar cada algoritmo
+b) Modificar a entrada e verificar o tempo de compilamento (entrada: 1000)
+c) Verficar o exemplo do livro: ordena -> adenor
+
+*/
 
 #include "funcoes.h"
 
-//ATIVIDADES DE SELEÇÃO
+//ATIVIDADES DE SELEï¿½ï¿½O
 void atividade1Selecao(){
 	int vetor[1000];
 	int tam=1000;
@@ -28,7 +25,7 @@ void atividade1Selecao(){
 	cout << "\nDesordenado: ";
 	imprime(vetor, tam);
 
-	cout << "\nSelecão:\n";
+	cout << "\nSelecï¿½o:\n";
 	selecao(vetor, tam);
 	cout << "Vetor: ";
 	imprime(vetor, tam);
@@ -42,14 +39,14 @@ void atividade2Selecao(){
 	cout << "\nDesordenado: ";
 	imprimeString(palavra, tam);
 
-	cout << "\nSelecão:\n";
+	cout << "\nSelecï¿½o:\n";
 	selecaoString(palavra, tam);
 	cout << "Palavra: ";
 	imprimeString(palavra, tam);
 }
 
 
-//ATIVIDADES DE INSERCÃO
+//ATIVIDADES DE INSERCï¿½O
 void atividade1Insercao(){
 	int vetor[1000];
 	int tam=1000;
@@ -63,7 +60,7 @@ void atividade1Insercao(){
 	cout << "\nDesordenado: ";
 	imprime(vetor, tam);
 
-	cout << "\nInsercão:\n";
+	cout << "\nInsercï¿½o:\n";
 	insercao(vetor, tam);
 	cout << "Vetor: ";
 	imprime(vetor, tam);
@@ -77,7 +74,7 @@ void atividade2Insercao(){
 	cout << "\nDesordenado: ";
 	imprimeString(palavra, tam);
 
-	cout << "\nInsercão:\n";
+	cout << "\nInsercï¿½o:\n";
 	insercaoString(palavra, tam);
 	cout << "Palavra: ";
 	imprimeString(palavra, tam);

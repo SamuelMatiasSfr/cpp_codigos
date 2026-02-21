@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : LP1-03-Arquivos de texto-Para Casa.pdf
-//============================================================================
-
 #include <stdio.h>
 #include <locale.h>
 #include <string.h>
@@ -62,7 +54,7 @@ int main(){
 	}
 
 	char substituida[TAMANHO_STRING];
-	printf("\nDigite a palavra a ser substitui­da: ");
+	printf("\nDigite a palavra a ser substituiï¿½da: ");
 	scanf("%s", substituida);
 
 	char nova[TAMANHO_STRING];

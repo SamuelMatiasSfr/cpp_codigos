@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : main.cpp
-// Author      : Samuel Matias
-// Version     :
-// Copyright   : Your copyright notice
-// Description : LP1-05-Atividade de laboratório.pdf
-//============================================================================
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -46,7 +38,7 @@ void tratarArquivo(char nome[], int tamMinimo){
 
 	fclose(arq);
 
-	printf("A maior palavra é '%s' e possui %d caracteres.\n", palavraMaior, tamMaior);
+	printf("A maior palavra ï¿½ '%s' e possui %d caracteres.\n", palavraMaior, tamMaior);
 	printf("Existem %d palavras maiores que %d caracteres.\n", cont, tamMinimo);
 }
 
