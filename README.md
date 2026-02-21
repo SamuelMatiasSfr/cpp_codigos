@@ -1,4 +1,4 @@
-# Códigos em Java
+# Códigos em C++
 
 Estes projetos foram desenvolvidos como atividades práticas da matéria Linguagem e Técnicas de Programação 2 no curso técnico de informática do CEFET-MG.
 
