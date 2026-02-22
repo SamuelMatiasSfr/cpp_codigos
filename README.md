@@ -2,10 +2,10 @@
 
 Estes projetos foram desenvolvidos como atividades práticas da matéria Linguagem e Técnicas de Programação 2 no curso técnico de informática do CEFET-MG.
 
-## Requisitos:
+## Requisitos
 - Compilador C compatível com C++11 ou superior
 
-## Tecnologias:
+## Tecnologias usadas
 - C/C++
 - SFML
 - Eclipse IDE
